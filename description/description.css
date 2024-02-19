@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f3eee4;
+    position: sticky;
+    top: 0;
+    color: #ca6f04 !important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo a {
+    margin-left: 88px;
+    font-size: 26px;
+    text-decoration: none;
+    color: initial;
+    font-family: cursive;
+    color: #ca6f04 !important;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ca6f04 !important;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    margin-right: 26px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ca6f04 !important;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+
+.product{
+    background-image: url(//bizweb.dktcdn.net/100/485/241/themes/911577/assets/background_module.png?1700209535143);
+}
+.product-description {
+    display: flex;
+    max-width: 800px;
+    width: 100%;    
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #e44d26; /* Màu cam, bạn có thể thay đổi theo ý muốn */
+    margin-bottom: 10px;
+}
+
+.product-description-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-button {
+    background-color: #34b7f1; /* Màu xanh dương, bạn có thể thay đổi theo ý muốn */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #218ad1; /* Màu xanh dương nhạt khi hover */
+}
+
+.footer {
+    margin-top: 64px;
+    background-image: url(//bizweb.dktcdn.net/100/485/241/themes/911577/assets/background.jpg?1700209535143);
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer div {
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer form {
+    margin-top: 10px;
+}
+
+.footer input {
+    padding: 5px;
+}
+
+.footer button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.social-icons{
+    margin-top: 16px;
+}
+
+.social-icons{
+    display: flex;
+}
+.social-icons i{
+    font-size: 20px;
+    color:#333;
+    margin-right: 10px;
+}
