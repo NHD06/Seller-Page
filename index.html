@@ -1,34 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar Example</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Web bán hàng</title>
 </head>
 <body>
-    <header>
-        <div class="logo">SalesPage</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="input-container">
-            <input type="text" name="text" class="input" placeholder="Search something...">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" class="icon"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <rect fill="white" height="24" width="24"></rect> <path fill="" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
-            </div>
-    </header>
-
-    <div class="content">
-        <div class="about">
-            <h2>About Us</h2>
-            <p>Have an amazing experience with our delivery services.</p>
+  <div id="wrapper">
+    <div id="header">
+      <a href="#" class="logo">
+        <img src="./images/Canva.png" alt="logo">
+      </a>
+      <div id="menu">
+        <div class="item">
+          <a href="#">Home</a>
         </div>
-        <img src="logitech.jpg" alt="Logitech Image">
+        <div class="item">
+          <a href="#">Product</a>
+        </div>
+        <div class="item">
+          <a href="#">Blog</a>
+        </div>
+        <div class="item">
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+      <div id="actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <button><i class="fa fa-search"></i></button>
+        </div>
+        <div class="item">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
     </div>
+    <!-- Slider -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div id="slider" style="background-image: url(./images/Slider/slider1.jpg);">
+            <div class="box-left">
+              <h2>
+                  <span>Apple store</span>
+                  <br>
+                  <span>Iphone 15 Pro Max</span>
+              </h2>
+                  <p>Designed in titanium
+                    Front Ceramic shield
+                    Dynamic Island's frosted glass back design dynamically displays alerts and Live Activity so you won't miss information while you're doing other work. You can control your music, see who's calling, check your flight status, and more.</p>
+                  <button>Buy now</button>
+            </div>
+              <div class="box-right">
+                <img src="./images/box-right3.jpg" alt="">
+                <img src="./images/box-right2.jpg" alt="">
+                <img src="./images/box-right1.jpg" alt="">
+            </div>
+              <div class="to-botton">
+            <a href=""><img src="" alt=""></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div id="slider" style="background-image: url(./images/Slider/slider2.jpg);">
+            <div class="box-left">
+              <h2>
+                  <span style="color: #DFF5FF;">Apple store</span>
+                  <br>
+                  <span style="color: #DFF5FF;">MAGIC KEYBOARD 2</span>
+              </h2>
+                  <p style="color: #DFF5FF;">Magic Keyboard with Touch ID provides a comfortable and impressively accurate typing experience. The keyboard is also wireless and rechargeable, with long battery life and it lasts a month or more on a charge.
+                  </p>
+                  <button>Buy now</button>
+            </div>
+              <div class="box-right">
+                <img src="./images/box-right3.jpg" alt="">
+                <img src="./images/box-right2.jpg" alt="">
+                <img src="./images/box-right1.jpg" alt="">
+            </div>
+              <div class="to-botton">
+            <a href=""><img src="" alt=""></a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div id="slider" style="background-image: url(./images/Slider/slider3.jpg);">
+            <div class="box-left">
+              <h2>
+                  <span>Apple store</span>
+                  <br>
+                  <span>MacBook Air M2</span>
+              </h2>
+                  <p style="color: #333;">The perspective highlights the sleek, minimalist design that Apple products are known for.
+                    With its extremely beautiful design, friendly macOS operating system, and good performance, MacBook has won the majority of the market share."
+                  </p>
+                  <button>Buy now</button>
+            </div>
+              <div class="box-right">
+                <img src="./images/box-right4.jpg" alt="">
+                <img src="./images/box-right2.jpg" alt="">
+                <img src="./images/box-right1.jpg" alt="">
+            </div>
+              <div class="to-botton">
+            <a href=""><img src="" alt=""></a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="margin-right: 30px;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <div class="to-bottom">
+        <a href="">
+            <img src="./images/to_bottom.png" alt="">
+        </a>
+    </div>
+    </div> 
+
+    <!-- Products -->
+    <div id="wp-product">
+      <h2>Outstanding product</h2>
+      <ul id="list-product">                                                  
+        <div class="item">
+          <div class="product-thumbnail">
+            <div class="smart">
+              <span>-11%</span>
+            </div>
+            <img src="./images/product/iphone-15-pro-max.jpg" style="border-radius: 10px;" alt="">
+          </div>
+          <div class="product-info">
+            <div class="name">Iphone 15 Pro Max-Tian256G</div>
+            <div class="price-box">
+              <div class="price">26.590.000₫</div>
+              <span class="compare-price">30.090.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="product-thumbnail">
+            <div class="smart">
+              <span>-12%</span>
+            </div>
+            <img src="./images/product/macbook-air-starlight.jpeg"  style="border-radius: 10px;" alt="">
+          </div>
+          <div class="pruduct-info">
+            <div class="name">MacBook Air 2022 M2-256GB</div>
+          <div class="price-box">
+            <div class="price">22.390.000₫</div>
+            <span class="compare-price">28.000.000₫</span>
+          </div>
+          </div>  
+        </div>
+
+        <div class="item">
+          <div class="product-thumbnail">
+            <div class="smart">
+              <span>-12%</span>
+            </div>
+          <img src="./images/product/ipad-pro.jpg" style="border-radius: 10px;" alt="">
+         </div>
+         <div class="pruduct-info">
+          <div class="name">iPad Pro M2 11 inch 2022</div>
+          <div class="price-box">
+            <div class="price">17.900.000₫</div>
+            <span class="compare-price">21.990.000₫</span>
+          </div>
+        </div>
+        </div>
+
+        <div class="item">
+          <div class="product-thumbnail">
+            <div class="smart">
+              <span>-10%</span>
+            </div>
+          <img src="./images/product/airpod.jpg" style="border-radius: 10px;" alt="">
+        </div>
+        <div class="pruduct-info">
+          <div class="name">AirPods 3rd Generation</div>
+          <div class="price-box">
+            <div class="price">4.490.000₫</div>
+            <span class="compare-price">4.990.000₫</span>
+          </div>
+        </div>
+        </div>
+      </ul>
+      <div class="list-page">
+        <div class="item">
+          <a href="">1</a>
+        </div>
+        <div class="item">
+          <a href="">2</a>
+        </div>
+        <div class="item">
+          <a href="">3</a>
+        </div>
+        <div class="item">
+          <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="offer-product">
+      <h2> <span class="span-offer"></span>
+        Special offer</h2>
+      <ul class="sub-offer">
+        <li><a href="">Iphone</a></li>
+        <li><a href="">Macbook</a></li>
+        <li><a href="">Ipad</a></li>
+        <li><a href="">Airpods</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--eeeeeeeeeeee-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+  <!--eeeeeeeeeeee-->
 </body>
 </html>
